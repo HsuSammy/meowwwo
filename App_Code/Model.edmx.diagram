@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b2ad9fd26550408395b9b347770ce1ea" Name="Diagram1">
+        <EntityTypeShape EntityType="MeowwwoDBModel.MemberShipping" Width="1.5" PointX="3" PointY="10.125" />
+        <EntityTypeShape EntityType="MeowwwoDBModel.Member" Width="1.5" PointX="1.125" PointY="9.5" />
+        <EntityTypeShape EntityType="MeowwwoDBModel.OrderDetail" Width="1.5" PointX="5.625" PointY="11.75" />
+        <EntityTypeShape EntityType="MeowwwoDBModel.Admin" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="MeowwwoDBModel.FK_MemberShipping_Members" />
+        <AssociationConnector Association="MeowwwoDBModel.FK_OrderDetails_Members" />
+        <EntityTypeShape EntityType="MeowwwoDBModel.Discount" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="MeowwwoDBModel.OrderList" Width="1.5" PointX="3.375" PointY="13.625" />
+        <AssociationConnector Association="MeowwwoDBModel.FK_Member_OrderList" />
+        <AssociationConnector Association="MeowwwoDBModel.FK_OrderDetails_OrderList" />
+        <EntityTypeShape EntityType="MeowwwoDBModel.Product" Width="1.5" PointX="0.75" PointY="4" />
+        <AssociationConnector Association="MeowwwoDBModel.FK_OrderDetails_Products" />
+        <EntityTypeShape EntityType="MeowwwoDBModel.MessageBox" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="MeowwwoDBModel.Payment" Width="1.5" PointX="5.375" PointY="0.75" />
+        </Diagram>
+      <Diagram DiagramId="b73fe6243a5f47d4af04eb14d9f0c329" Name="Diagram2" >
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

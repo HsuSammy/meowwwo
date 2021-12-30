@@ -1,0 +1,263 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MEOWWWO | Cat Of The Day</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+    <!-- Css Styles -->
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Scripts/sweetalert2.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="CssPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+  
+   
+    
+
+</head>
+    <!-- Page Preloder -->
+    <%--<div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper "
+        <div class="offcanvas__option">
+            <div class="offcanvas__links">
+                
+                <%--<a href="#">Sign in</a>--%>
+                <%--<a href="#">FAQs</a>
+            </div>
+            <div class="offcanvas__top__hover">
+                <span><a><i class="fa fa-user-circle"></i></a><i class="arrow_carrot-down" ></i></span>
+                <ul>
+                    <li>登入會員</li>
+                    <li>註冊會員</li>
+                    <li>登出</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="offcanvas__nav__option">
+            <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+            <a href="#"><img src="img/icon/heart.png" alt=""></a>
+            <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+            <div class="price">$0.00</div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__text">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+        </div>
+    </div>--%>
+
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header fixed-top" >
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header__top__left">
+                            <p>【慶開幕】不限消費金額，享有免運！</p>
+                          
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            <div class="header__top__links">   
+                              <div class="header__top__hover">
+                                <span><i class="fa fa-user-circle" >
+                                    <asp:Label ID="userName" runat="server" Text=""></asp:Label>
+                                </i><i class="arrow_carrot-down"></i></span>
+                                <ul class="loginDropbox">
+                                 
+                                    <li><a href="./Member_login.aspx">登入會員</a></li>
+                                    <li><a href="./Member_login.aspx?type=register">註冊會員</a></li>
+                                    <li><a href="./Member_Center.aspx">會員中心</a></li>
+                                    <li><a href="./Member_logout.aspx"/> 登出</li>
+                                </ul>
+                            </div>
+                                <%--<a href="#">Sign in</a>--%>
+                               <a href="FAQ.aspx">FAQs</a>
+                            </div>
+                             
+                           <%-- <div class="header__top__hover">
+                                <span>Usd <i class="arrow_carrot-down"></i></span>
+                                <ul>
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                    <li>USD</li>
+                                </ul>
+                            </div>--%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                   <%-- <div class="header__logo">--%>
+                      <%--  <div id="HelpButton">--%>
+                            <a  href="index.aspx">
+                    <img alt="Chameleon admin logo"  class="logo_logo" src="img/logo.svg"" /> </a>
+                     <%--    </div>--%>
+                <%--</div>--%></div>
+                <div class="col-lg-7 col-md-7">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                           <li> <a href="./index.aspx">首頁</a></li>
+                             <li><a href="#">喵嗚商品</a>
+                                <ul class="dropdown">
+                                     <li><a href="./Product_AllProducts.aspx">全部商品</a></li>
+                                    <li><a href="./Product_Bed.aspx">喵嗚的床</a></li>
+                                    <li><a href="./Product_Play.aspx">舒壓小物</a></li>
+                                    <li><a href="./Product_GoOut.aspx">外出用品</a></li>
+                                </ul>
+                                    <li><a href="./Product_Cart.aspx">購物車</a></li>
+                            <li ><a href="./blog.aspx">部落格</a></li>
+                            <li><a href="./Contact.aspx">聯絡喵嗚</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <div class="header__nav__option">
+                         
+                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+                        <a href="#"><img src="img/icon/heart.png" alt=""></a>
+                        <a href="./Product_Cart.aspx"><img src="img/icon/cart.png" alt=""> <span>
+                            <asp:Label runat="server" Text="0" ID="cartCount"></asp:Label>
+                        </span></a>
+                        <div class="price">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+<body>
+     <form id="form1" runat="server">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <div href="#"><img src="img/footer-logo.svg" alt=""></div>
+                        </div>
+                        <p>以安全、質感的素材與設計致力創造寵物與人的好感生活</p>
+                        <%--<a href="#"><img src="img/payment.png" alt=""></a>--%>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Shopping</h6>
+                        <ul>
+                            <li><a href="./Product_AllProducts.aspx">All Products</a></li>
+                            <li><a href="./Product_Bed.aspx">Cat Bed</a></li>
+                            <li><a href="./Product_Play.aspx">Play With Cat</a></li>
+                            <li><a href="./Product_GoOut.aspx">Go Out With Cat</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Store</h6>
+                        <ul>
+                            <li><a href="./Contact.aspx">Contact Meowwwo Store</a></li>
+                            <li><a href="./FAQ.aspx">FAQs</a></li>
+                            <li><a href="./Blog.aspx">Blog</a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>NewLetter</h6>
+                        <div class="footer__newslatter">
+                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                            <div action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit"><span class="icon_mail_alt"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                                (function () {
+                                    $
+                                })
+                            </script>2020
+                            All rights reserved | This template is made with <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Sammy</a>
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <div class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </div>
+        </div>
+    </div>
+    <!-- Search End -->
+         </form>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="Scripts/sweetalert2.min.js"></script>
+    
+
+    <asp:ContentPlaceHolder ID="ScriptHolder" runat="server"></asp:ContentPlaceHolder>
+
+</body>
+</html>
